@@ -6,6 +6,17 @@
 
 SELECT * FROM orders;
 
+-- Answer:
+SELECT COUNT(customerid)
+FROM orders
+WHERE customerid IN (7888, 1082, 12808, 9623);
+
+-- Answer 2:
+SELECT *
+FROM orders 
+WHERE customerid IN (7888, 1082, 12808, 9623);
+
+Therefore = 6.
 
 /*
 * DB: World
@@ -14,3 +25,16 @@ SELECT * FROM orders;
 */
 
 SELECT * FROM city;
+
+-- Answer:
+SELECT COUNT(id)
+FROM city 
+WHERE district IN ('Zuid-Holland', 'Noord-Brabant','Utrecht');
+
+-- Answer 2:
+SELECT * 
+FROM city 
+WHERE district IN ('Zuid-Holland', 'Noord-Brabant','Utrecht');
+
+Therefore = 12
+
